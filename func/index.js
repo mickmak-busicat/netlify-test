@@ -6,11 +6,7 @@ exports.handler = function(event, context, callback) {
     callback(null, {
       statusCode: 307,
       headers: {
-        location: [
-          /** 'AWS_S3_ENDPOINT' will be packed by webpack */
-          /* eslint-disable-next-line no-undef */
-          { key: 'Location', value: 'https://elated-joliot-752915.netlify.app/files/5_6330189367990026289.mp4' },
-        ],
+        Location: 'https://elated-joliot-752915.netlify.app/files/5_6330189367990026289.mp4',
       },
     });
   } else {
