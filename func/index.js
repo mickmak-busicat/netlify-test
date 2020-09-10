@@ -1,5 +1,5 @@
 exports.handler = function(event, context, callback) {
-  const { token } = event;
+  const { token } = event.queryStringParameters;
   console.log(event);
 
   if (token === 'ABCD') {
