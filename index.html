@@ -1,2 +1,27 @@
-hi
-https://elated-joliot-752915.netlify.app/.netlify/functions/index
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Test large media video</h1>
+
+<p>plain:</p>
+<video width="320" height="240" controls>
+  <source src="https://elated-joliot-752915.netlify.app/files/5_6330189367990026289.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<p>function without token:</p>
+<video width="320" height="240" controls>
+  <source src="https://elated-joliot-752915.netlify.app/.netlify/functions/index" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<p>function with token:</p>
+<video width="320" height="240" controls>
+  <source src="https://elated-joliot-752915.netlify.app/.netlify/functions/index?token=ABCD" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+</body>
+</html>
+
